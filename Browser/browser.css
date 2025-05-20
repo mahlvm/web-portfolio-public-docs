@@ -1,0 +1,404 @@
+.browser-theme {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.browser-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+
+    .browser-title h1{
+        padding-top: 5rem;
+        font-size: 3rem;
+    }
+
+    .browser-title p{
+        padding-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .browser-title a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #7B4AE2;
+    }
+
+    .browser-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        padding-bottom: 30px;
+    } 
+
+    .toggle-btn {
+        border-radius: 10px 10px 10px 10px;
+        width: 90px;
+        height: 40px;
+        cursor: pointer;
+        position: relative;
+        border: none;
+
+    }
+
+    .toggle-btn .thumb{
+        height: 35px;
+        width: 35px;
+        border-radius: 20%;
+        transform: scale(.9);
+        position: absolute;
+        top: 8%;
+        transition: all 0.4s ease;
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        align-items: center;
+        left: 3px;
+    }
+
+    .toggle-btn .thumb img{
+        padding: 10px;
+    }
+
+    .toggle-btn.toggled .thumb {
+        left: calc(90px - 38px);
+    }
+
+
+    .main-browser-button{
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .main-browser-button button{ 
+        width: 100px;
+        border-radius: 99px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .browser-grid ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .browser-grid li {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .boxTop{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .informationBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .informationBox h1{
+        padding-bottom: 10px;
+    }
+
+    .informationBox p{
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .buttonsBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+
+    .buttonRemove{
+        border-radius: 99px;
+        padding: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    
+
+    .toggle-btn-active {
+        border-radius: 50px;
+        width: 45px;
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+        border: none;
+    }
+
+    .toggle-btn-active .thumb-active {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        transform: scale(.9);
+        position: absolute;
+        top: 10%;
+        transition: all 0.3s ease;
+    }
+
+    .toggle-btn-active.Inativo .thumb-active {
+        left: 3px;
+    }
+
+    .toggle-btn-active.Ativo .thumb-active {
+        left: 22px;
+    }
+
+    
+
+
+    /* Tema Escuro */
+    .browser-theme.darkMode {
+        background-color: #090E16;
+        color: white;
+    }
+    
+    .browser-theme.darkMode .browser-title {
+        color: white;
+    }
+
+
+    .browser-theme.darkMode .main-browser-button button{
+        background-color: #302D3D;
+        color: white;
+    }
+    .browser-theme.darkMode .main-browser-button button:hover{
+        background-color: #695691;
+
+    }
+
+    .browser-theme.darkMode .browser-grid li {
+        background-color: #302D3D;
+        color: white;
+        border: 1px solid #695691;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .browser-theme.darkMode .buttonRemove{
+        background-color: #302D3D;
+        color: white;
+        border: 1px solid #695691;
+    }
+    .browser-theme.darkMode .buttonRemove:hover{
+        background-color: #695691;
+
+    }
+
+    .browser-theme.darkMode .toggle-btn {
+        background-color: #302D3D;
+        border: none;
+    }
+
+    .browser-theme.darkMode .toggle-btn .thumb{
+        background-color: #090E16;
+        border: none;
+    }
+
+    .browser-theme.darkMode .toggle-btn-active.Ativo {
+        background-color: #695691;
+    }
+
+    .browser-theme.darkMode .toggle-btn-active.Inativo {
+        background-color: #090E16;
+    }
+
+    .browser-theme.darkMode .toggle-btn-active .thumb-active {
+        background-color: white;
+    }
+
+    
+
+
+
+
+    
+    /* Tema Claro */
+
+    .browser-theme.lightMode {
+        background-color: #F0EEF6;
+        color: #090E16;
+    }
+    
+    .browser-theme.lightMode .browser-title {
+        color: #090E16;
+    }
+
+    .browser-theme.lightMode .main-browser-button button{
+        color: #695691;
+        background-color: white;
+    }
+
+    .browser-theme.lightMode .main-browser-button button:hover{
+        background-color: #695691;
+        color: white;
+    }
+
+    .browser-theme.lightMode .browser-grid li {
+        background-color: white;
+        color: #695691;
+        border: 1px solid #C5BFDE;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .browser-theme.lightMode .buttonRemove{
+        color: #695691;
+        background-color: white;
+        border: 1.2px solid #695691;
+    }
+
+    .browser-theme.lightMode .buttonRemove:hover{
+        background-color: #695691;
+        color: white;
+    }
+
+    .browser-theme.lightMode .toggle-btn {
+        background-color: #695691;
+        border: none;
+    }
+
+    .browser-theme.lightMode .toggle-btn .thumb{
+        background-color: white;
+        border: none;
+    }
+
+    .browser-theme.lightMode .toggle-btn-active.Ativo {
+        background-color: #695691;
+    }
+
+    .browser-theme.lightMode .toggle-btn-active.Inativo {
+        background-color: #C5BFDE;
+    }
+
+    .browser-theme.lightMode .toggle-btn-active .thumb-active {
+        background-color: white;
+    }
+
+
+    @media (max-width: 1024px) {
+            .browser-grid ul {
+            grid-template-columns: 1fr 1fr;
+            }
+        
+            .browser-title h1 {
+            font-size: 2.5rem;
+            }
+        
+            .main-browser-button button {
+            width: 90px;
+            font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .browser-main {
+            padding: 1rem;
+            }
+        
+            .browser-title h1 {
+            font-size: 2rem;
+            padding-top: 3rem;
+            }
+        
+            .browser-logo {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            }
+        
+            .main-browser-button {
+            justify-content: start;
+            flex-wrap: wrap;
+            }
+        
+            .browser-grid ul {
+            grid-template-columns: 1fr;
+            }
+        
+            .informationBox h1 {
+            font-size: 1.8rem;
+            }
+        
+            .informationBox p {
+            font-size: 14px;
+            }
+        
+            .toggle-btn {
+            width: 70px;
+            height: 35px;
+            }
+        
+            .toggle-btn .thumb {
+            height: 30px;
+            width: 30px;
+            }
+        
+            .toggle-btn.toggled .thumb {
+            left: calc(70px - 33px);
+            }
+        
+            .toggle-btn-active {
+            width: 40px;
+            height: 22px;
+            }
+        
+            .toggle-btn-active .thumb-active {
+            width: 18px;
+            height: 18px;
+            }
+        
+            .toggle-btn-active.Ativo .thumb-active {
+            left: 20px;
+            }
+        
+            .toggle-btn-active.Inativo .thumb-active {
+            left: 2px;
+            }
+        
+            .main-browser-button button {
+            font-size: 14px;
+            width: auto;
+            padding: 8px 16px;
+            }
+        }
+        
