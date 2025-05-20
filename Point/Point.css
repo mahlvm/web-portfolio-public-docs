@@ -1,0 +1,105 @@
+.point-screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    background-color: #090E16;
+    padding-top: 5rem;
+}
+
+.point-settings{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: top;
+    padding-right: 1rem;
+    padding-top: 4rem;
+}
+
+.point-settings button {
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7B4AE2;
+    border-radius: 0.3rem;  
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.point-settings span {
+    padding: 0.5rem;
+    color: #7B4AE2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.1rem;  
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.point-settings input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.point-container {
+    background-color: white;
+    width: 50vw;
+    height: 75vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    border-radius: 1rem;
+    cursor: url('../assets/pencil.svg') 0 15, auto;
+    border: 5px solid #7B4AE2; 
+}
+
+.dot {
+    background-color: black;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+@media (max-width: 480px) {
+
+    .point-screen {
+        width: auto;
+        padding: 20px 10px 0 10px;
+    }
+
+    .point-container {
+        width: 90vw;  
+        height: 80%; 
+    }
+
+    .point-settings button, .point-settings span {
+        font-size: 0.8rem; 
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
