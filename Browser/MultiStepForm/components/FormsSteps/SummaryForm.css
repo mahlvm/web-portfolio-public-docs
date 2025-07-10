@@ -1,0 +1,114 @@
+.summaryFormContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%; 
+    width: 100%;
+}
+
+.summaryBox{
+    box-sizing: border-box;
+    background-color: white;
+    /* flex: 1; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.summaryBoxPlan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+}
+
+
+.summaryBoxPlan div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    color: #090E16;
+}
+
+.summaryBoxPlan div:nth-child(2){
+    font-weight: 900;
+    color: #090E16;
+}
+
+.sumaryBoxButton{
+    font-size: 0.67rem;
+    text-decoration:underline;
+    cursor: pointer;
+    color: #090E16;
+}
+
+.summaryDivider {
+    background-color: #7B4AE2;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    height: 0.1rem;
+}
+
+.summaryBoxOdds {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    color: #090E16;
+}
+
+.summaryListItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+}
+
+.summaryListItem dd{
+    font-weight: 900;
+}
+
+.totalBox{
+    box-sizing: border-box;
+    /* flex: 1; */
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+}
+
+.totalBox p:nth-child(1){
+    color:090E16;
+}
+
+.totalBox p:nth-child(2){
+    color:#7B4AE2;
+    font-weight: 900;
+}
+
+@media (max-width: 600px){
+    .summaryBox{
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .totalBox{
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+}

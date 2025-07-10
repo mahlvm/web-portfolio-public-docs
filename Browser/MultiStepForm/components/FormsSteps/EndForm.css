@@ -1,0 +1,38 @@
+.endformContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.multiStepsTxtEnd{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.multiStepsTxtEnd h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.multiStepsTxtEnd p{
+    padding-top: 1rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px){
+    .multiStepsTxtEnd h2{
+        font-size: 2rem;
+    }
+    
+    .multiStepsTxtEnd p{
+        font-size: 1rem;
+    }
+}

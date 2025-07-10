@@ -1,0 +1,210 @@
+.planFormContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.planFormForm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+}  
+
+.planFormInputsBox{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    /* flex-grow: 1 */
+}
+
+.planFormInputs{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    gap: 3rem;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
+    border: none;
+}
+
+.planFormInputs input {
+    display: none;
+}
+
+
+.planFormInputs label{
+    background-color: white;
+    color: #090E16;
+    box-sizing: border-box;
+    padding: 5em 1.5rem;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.planFormInputs label:hover{
+    border: 2px solid;
+    border-color: #7B4AE2;
+}
+
+.planFormInputs label:has(input:checked) {
+    border: 2px solid #7B4AE2;
+    background-color: #f3f0ff; 
+}
+
+
+.imgLabel{
+    height: 60%;
+    box-sizing: border-box;
+}
+
+.imgLabel img{
+    height: 4rem;
+}
+
+.textLabel{
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.textLabel p:nth-child(1){
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.textLabel p:nth-child(2){
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.switchButtonDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+    background-color: #251d48;
+    border-radius: 10px;
+}
+
+.switchButtonDiv span{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.switchButton {
+    position: relative;
+    width: 5rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+.thumbButton {
+    position: absolute;
+    top: 0.25rem;
+    left: 0.1rem;
+    transition: all 0.3s ease;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #7B4AE2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.switchButton.right .thumbButton {
+    left: calc(100% - 1.6rem); 
+}
+
+@media (max-width: 600px){
+
+    .planFormInputsBox{
+        gap: 2rem;
+        height: auto;
+    }
+    
+    .planFormForm{
+        height: 70%;
+    }
+    .planFormInputs{
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 0;
+        height: 100%;
+    }
+
+    .planFormInputs label{
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgLabel img{
+        height: 3rem;
+    }
+
+    .textLabel{
+        padding-left: 0.6rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textLabel p:nth-child(1){
+        font-size: 1rem;
+    }
+    
+    .textLabel p:nth-child(2){
+        font-size: 0.8rem;
+    }
+
+    .switchButtonDiv{
+        gap: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .switchButtonDiv span{
+        font-size: 1rem;
+    }
+    .switchButton {
+        width: 3rem;
+        height: 1.4rem;
+    }
+
+    .thumbButton {
+        top: 0.2rem;
+        left: 0.1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .switchButton.right .thumbButton {
+        left: calc(100% - 1.1rem); 
+    }
+}

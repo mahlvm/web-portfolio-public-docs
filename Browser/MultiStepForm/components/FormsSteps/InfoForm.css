@@ -1,0 +1,70 @@
+.infoFormContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.multiStepsTxt{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    padding-bottom: 3rem;
+}
+
+.multiStepsTxt h2{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.multiStepsTxt p{
+    font-weight: 100;
+    font-size: 1rem;
+}
+.infoFormInputs{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.infoFormInputs input{
+    background-color: #090E16;
+    width: 100%;
+    box-sizing: border-box;
+    height: 3rem;
+    border: 2px solid;
+    border-color: #251d48;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    padding-left: 1rem;
+}
+
+.infoFormInputs input::placeholder{
+    color: #251d48;
+    padding-left: 1rem;
+}
+
+.infoFormInputs input:focus{
+    border-color: #7B4AE2;
+    outline: none;
+}
+
+
+
+@media (max-width: 600px){
+    .multiStepsTxt{
+        padding-bottom: 1rem;
+    }
+    
+    .multiStepsTxt h2{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+    .multiStepsTxt p{
+        font-weight: 100;
+        font-size: 0.8rem;
+    }
+}

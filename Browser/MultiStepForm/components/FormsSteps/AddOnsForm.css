@@ -1,0 +1,92 @@
+.addOnsFormContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%; 
+    width: 100%;
+}
+.addOnsForm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+}  
+
+.addOnsInputsBox{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    /* flex-grow: 1 */
+}
+
+.addOnsInputs{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 5rem;
+    border: none;
+}
+
+.addOnsInputs label{
+    background-color: white;
+    color: #090E16;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.addOnsInputs label:hover{
+    border: 2px solid;
+    border-color: #7B4AE2;
+}
+
+.addOnsInputs label:has(input:checked){
+    border: 2px solid #7B4AE2;
+    background-color: #f3f0ff; 
+}
+
+
+.addOnsTxt{
+    padding-left: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+
+.addOnsInputs h4{
+    position: absolute;
+    left: 87%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7B4AE2;
+}
+
+@media (max-width: 600px){
+    .addOnsInputs label{
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+    }
+
+    .addOnsTxt{
+        padding-left: 0.5rem;
+    }
+
+    .addOnsInputs h4{
+        left: 75%;
+    }
+}
